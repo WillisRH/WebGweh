@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family:'Times New Roman', Times, serif; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+.header{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav img{
+    width: 95px;
+    border-radius: 50%;
+    border: 2.5px solid transparent;
+  background: whitesmoke;
+    text-align: center;
+
+
+}
+
+/* todo benerin socialmedia */
+
+
+    
+
+.nav-links{
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-align: right;
+    animation: slide-down 1.5s ease;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 50%;
+}
+
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 5px;
+    font-size: 150%;
+    text-align: center;
+    animation: slide-up 1s ease;
+}
+
+.container h1 {
+    font-size: 180%;
+}
+
+.container h1 span {
+    font-size: 100%;
+}
+
+.playlist {
+    text-align: center;
+    margin-top: 2cm;
+    text-align: center;
+    position: relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent;
+    border-radius: 10px;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(228, 145, 159);
+    border-radius: 10px;
+}
+
+.desc {
+    text-align: center;
+    animation: slide-up 1.5s ease;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+
+.about {
+    margin-top: 15cm;
+}
+
+
+
+.about h1 {
+    font-size: 150%;
+    margin-left: 20px;
+    position: relative;
+}
+
+.about h2 {
+    margin-left: 20px;
+    position: relative;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.2;
+        transform: translateY(250px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0.2;
+        transform: translateY(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    
+}
+
+@keyframes slide-right {
+    from {
+    opacity: 0.2;
+      transform: translateX(-100%);
+    }
+    to {
+    opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+    opacity: 0.2;
+      transform: translateX(100%);
+    }
+    to {
+    opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+.scrdown{
+    width: 90%;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 7cm;
+}
+
+.scrdown .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13;
+    background: transparent;
+    position: relative;    
+    text-align: center;
+    animation: slide-up 1.5s ease;
+}
+.scrdown .hero-btn:hover{
+    border: 1px solid #f4436f;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+
+
+.Spotify {
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ff6347;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    background-color: skyblue;
+    border-radius: 15px;
+    margin-right:250px;
+    margin-left: 20px;
+    margin-top: 1cm;
+}
+
+.about h1{
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.about h2{
+    background-color: transparent;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+
+.hobby {
+    background-color: green;
+    border-radius: 15px;
+    margin-left: 250px;
+    margin-top: 25px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.hobby h1{
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: 150%;
+    margin-right: 20px;
+}
+
+.hobby h2{
+    background-color: transparent;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+.personality {
+    margin-top: 25px;
+    background-color:coral;
+    border-radius: 15px;
+    margin-right:250px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    /* max-width: 90%;
+    word-wrap: break-word; */
+}
+
+.personality h1 {
+    font-size: 120%;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-right:10px;
+    position: relative;
+    background-color: transparent;
+    /* max-width: 90%;
+    word-wrap: break-word; */
+}
+
+.personality h2 {
+    margin-left: 20px;
+    position: relative;
+    background-color: transparent;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+.personality h3 {
+    margin-left: 20px;
+    position: relative;
+    font-size: medium;
+    background-color: transparent;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+
+    .desc {
+        width: 300px;
+  margin: 0 auto;
+    }
+
+    .about {
+      width: 300px;
+    }
+
+    .hobby {
+        width: -300px;
+    }
+
+    .personality {
+        width: 300px;
+    }
+
+
+    .crush {
+        width: -300px;
+
+    }
+  }
+
+.crush {
+    background-color: pink;
+    border-radius: 15px;
+    margin-right:10px;
+    margin-left: 250px;
+    margin-top: 25px;
+    text-align: right;
+    cursor: help;
+}
+
+.crush button{
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: 150%;
+    margin-right: 20px;
+    border-color: transparent;
+    cursor: help;
+}
+
+
+
+.crush h2{
+    background-color: transparent;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+
+
+
+.closer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer a{
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: help;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.cmsoon {
+    background-color: pink;
+    border-radius: 15px;
+    margin-right:10px;
+    margin-top: 25px;
+}
+
+.cmsoon p {
+    text-align: center;
+    font-size: 120%;
+    background-color: transparent;
+}
+.cmsoon h1 {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 120%;
+    background-color: transparent;
+}
+/* Todo Making Copyright, Social Media, More... */
